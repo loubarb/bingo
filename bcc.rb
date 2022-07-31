@@ -1,4 +1,4 @@
-bing_card = <<=BINGO
+bingo_card = <<=BINGO
 
 +---+---+---+---+---+
 | B | I | N | G | O |
@@ -15,4 +15,4 @@ bing_card = <<=BINGO
 +---+---+---+---+---+
 BINGO
 
-puts bing_card
+puts bingo_card

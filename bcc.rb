@@ -1,3 +1,5 @@
+require "prawn"
+
 # range (x..y) to include numbers, to_a to form array, .sample to take random amount from the range
 # declare first
 b_col = (1..15).to_a.sample(5)
@@ -39,8 +41,9 @@ BINGO
 # puts g_col.inspect
 # puts o_col.inspect
 
-# puts b_col
-
-
-
 puts bingo_card
+
+Prawn::Document.generate("bingo.pdf") do
+  define_grid(columns: 5, rows: 6)
+  grid.show_all
+end
